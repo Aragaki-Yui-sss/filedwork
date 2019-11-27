@@ -1,0 +1,18 @@
+LZGranderson_2012X_3_56 YOU MIGHT BE GAY
+
+
+^[A-Za-z0-9]?\_[A-Za-z0-9]?\_[0-9]*\_[0-9]*\s[A-Za-z0-9\s]*$
+
+^[A-Za-z0-9\s]*$ no problem
+^[A-Za-z0-9]*_[A-Za-z0-9]*_[0-9]*_[0-9]*$ no problem
+^[A-Za-z0-9]*_[A-Za-z0-9]*_[0-9]*_[0-9]*\s[A-Za-z0-9\s]*$ no problem
+^[A-Za-z0-9]*_[A-Za-z0-9]*_[0-9]*_[0-9]*\s[A-Za-z0-9\s]+$
+
+^[A-Za-z]*\s[A-Za-z]*\s[A-Za-z]*\s[A-Za-z]*$
+
+^[A-Za-z ]*$
+
+^[A-Za-z0-9]*_[A-Za-z0-9]*_[0-9]*_[0-9]*\s[A-Za-z ]*$
+
+grep -E '^[A-Za-z0-9]*_[A-Za-z0-9]*_[0-9]*_[0-9]*\s[A-Za-z ]*$' text > text_changed02.txt
+grep -E '^[A-Za-z0-9]*_[A-Za-z0-9]*_[0-9]*_[0-9]*\s[\'A-Za-z ]*$' text > text_changed03.txt
