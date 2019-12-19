@@ -1,4 +1,8 @@
 #!/bin/bash
+# addcomma - put commas in numbers 
+# input: a number per line # output: the input number followed by 
+# the number with commas and two decimal places
+
 awk '
 { 
     printf("%-12s %20s\n", $0, addcomma($0))
